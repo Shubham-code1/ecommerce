@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart items</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- <script  type="text/javascript" src="./js/index.js"></script> -->
+    <link rel="icon" href="./assets/images/logos.png">
+  
+</head>
+<body>
+
+<!-- navigation bar  -->
+    <section id="cart-navigation">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary px-lg-5 py-2 fixed-top nav-productPage">
+             <div class="container-fluid">
+               <a class="navbar-brand" href="#">
+                 <img src="./assets/images/brand.png" alt="logo.png" class="img-fluid logo_img">
+               </a>
+               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span >
+                   <i class="fa-solid fa-bars"></i>
+                 </span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                   <li class="nav-item">
+                     <a class="nav-link active" aria-current="page" href="#">Home</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#category">Category</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#testimonials">Testimonials</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#blogs">Blogs</a>
+                   </li>
+                 </ul>
+                 <form class="d-flex" role="search">
+                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                     <button class="btn s-media-btn" type="submit">Search</button>
+ 
+                     <a href="#">
+                         <button class="btn none" type="submit">
+                             <i class="fa-solid fa-user"></i>
+                             <span class="icon_nav user-online"></span>
+                         </button>
+                     </a>
+ 
+                     <a href="#">
+                         <button class="btn none" onclick="buyNow()">
+                             <i class="fa-solid fa-cart-shopping"></i>
+                             <span class="icon_nav cart-order">1</span>
+                         </button>
+                     </a>
+                    
+                 </form>
+ 
+               </div>
+             </div>
+           </nav> 
+   </section> 
+
+   <!-- Offer & billing section -->
+
+   <section class="nav-gap" id="cartItem ">
+            <div class="container-fluid pt-2 px-sm-5">
+                    <div class="row px-1">
+                        <!-- left section -->
+                        <div class="col-sm-6 px-0">
+                            <!-- coupon section starts -->
+                            <div class="border rounded-1 px-3 py-2 ">
+                                <h5>Coupons</h5>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h6>
+                                        <i class="fa-solid fa-tags"></i>
+                                        Apply Coupons
+                                    </h6>
+
+                                    <button class="btn s-media-btn text-white py-1 mb-1">Apply</button>
+
+                                </div>
+                            </div>
+                            <!-- coupon section starts -->
+
+                            <!-- credit card section offer section -->
+                            <div class="px-3 py-3 border mt-3 d-flex flex-column rounded-1">
+                                <h6>
+                                    <i class="fa-solid fa-tags"></i>
+                                    Available offers
+                                </h6>
+                                <p class="fw-light">7.5% instant discounts on every spends with international banks credit cards.TCA</p>
+                                <p class="fw-light">4.5% instant discounts on every spends with any banks credit cards.TCA</p>
+                            </div>
+                             <!-- credit card section offer section -->
+
+                             <!-- avoid shipping fee section starts -->
+                                    <div class="border py-3 px-3 mt-3 d-flex rounded-1 justify-content-between">
+                                        <p><i class="fa-solid fa-truck pe-1"></i><strong>Avoid shipping fee</strong> in your first order</p>
+                                        <a href="#" class="text-decoration-none" style="color:var(--primary-color)">Register Now</a>
+                                    </div>
+                             <!-- avoid shipping fee section ends-->
+
+                            <div>
+
+                            </div>
+
+
+
+
+                        </div>
+
+                        <!-- Billing section -->
+                            <div class="col-sm-6 pt-3 px-1 px-sm-3">
+                                <h6>Price Details</h6>
+                                <!-- price calculation -->
+                                <div class="d-flex flex-column py-3 border rounded-1">
+                                        <div class="d-flex justify-content-between px-2 px-sm-3">
+                                            <p class="fw-light mb-1">Total MRP</p>
+                                            <p class="mb-1">&#8377; <span class="">699</span></p>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between px-2 px-sm-3">
+                                            <p class="fw-light mb-1">Discount on MRP</p>
+                                            <p class="mb-1">- &#8377; <span class="d-mrp text-success">364</span></p>
+                                        </div>
+
+                                        <div class="d-flex justify-content-between px-2 px-sm-3">
+                                            <p class="fw-light mb-1 c-dicount">Coupon Discount</p>
+                                            <p class="mb-1"><span class=" a-coupon text-danger ">Apply Coupon</span></p>
+                                        </div>
+                                        <div class="d-flex justify-content-between px-2 px-sm-3">
+                                            <p class="fw-light mb-1">Platform Fee
+                                                
+                                            </p>
+                                            <p class="mb-1">&#8377; <span class="">79</span></p>
+                                        </div>
+                                        <div class="d-flex justify-content-between px-2 px-sm-3">
+                                            <p class="fw-light mb-1">Shipping Fee
+                                               
+                                            </p>
+                                            <p class="mb-1">&#8377; <span class="">20</span></p>
+                                        </div>
+                                        <hr>
+                                        <div class="d-flex justify-content-between px-2 px-sm-3">
+                                            <p class="fw-medium mb-1">Total Amount</p>
+                                            <p class="mb-1 fw-medium">&#8377; <span class="">434</span></p>
+                                        </div>
+                                        
+                                            <button class="btn s-media-btn mx-sm-3 mt-3 text-white fw-medium" onclick="featurenotAvailable()">PLACE ORDER</button>
+                                </div>
+
+                            </div>
+                    </div>
+            </div>
+   </section>
+
+
+   <!-- cart item section  -->
+
+<section id="mycart-display" class="pt-3">
+  
+  
+    <h3 class="text-shadow px-lg-5 px-3">Cart items</h3>
+ 
+  <hr class="text-danger">
+    <div class="container-fluid pt-2 px-lg-5">
+
+
+        <div class="row" id="CartItemContainer">
+            <!-- card is adding here dynamically  -->
+            
+      </div>
+        
+    </div>
+</section>
+
+<!-- footer section starts from here  -->
+
+
+<footer id="footer" class="footer-gap bg bg-danger-subtle " >
+  <div class="container footer_container">
+    <!--footer newsletter section starts here-->
+        <div class="row footer_pad ">
+                <div class="col-lg-4 col-md-6 col-12 p-2 ps-0">
+                    <h1 class="footer_head">Subscribe to Our Newsletter</h1>
+                </div>
+                <div class="col-lg-8 col-md-6 col-12  p-3">
+                    <!-- newsletter subscribing section starts -->
+                   <div class="row justify-content-center">
+                        <div class="col-lg-8 col-md-10 col-12 subs_color px-4 py-3 rounded d-flex align-items-center">
+                                <div class="col-2 text-center">
+                                  <i class="fa-regular fa-envelope"></i>
+                                </div>
+                                <div class="col-6">
+                                    <input type="email" id="subs_email" name="subs_email" class="form-control py-2 border-0" placeholder="Enter your email">
+                                </div>
+                                <div class="col-4 d-flex justify-content-center">
+                                    <button class="btn s-media-btn px-4 px-lg-4 px-md-2 py-2">Subscribe</button>
+                                </div>
+                        </div>
+                    </div>
+                   <!-- newsletter subscribing section starts -->
+                </div>
+        </div>
+    <!-- newsletter section ends -->
+    
+    <!-- footer listing section starts -->
+        <div class="row footer_lower_pad">
+        <!-- left part starts -->
+                
+                    <div class="col-lg-4 col-12 d-flex flex-column justify-content-between align-items-start">
+                                <!-- First Row Logo -->
+                                <div class="my-2">
+                                    
+                                </div>
+                            
+                                <!-- Second Row -->
+                                <div class="my-1">
+                                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, ad?</p>
+                                </div>
+                            
+                                <!-- Third Row - Social Icons -->
+                                <div class="my-3 d-flex justify-content-left">
+
+                                      <button class="btn s-media-btn me-2">
+                                        <i class="fa-brands fa-facebook"></i>
+                                      </button>
+                                      
+                                   <button class="btn s-media-btn me-2">
+                                      <i class="fa-brands fa-twitter"></i>
+                                   </button>
+                                       
+                                   <button class=" btn s-media-btn">
+                                      <i class="fa-brands fa-linkedin"></i>
+                                   </button>
+
+
+                                </div>
+                            
+                                <!-- Fourth Row - Copyright Message -->
+                                <div class="text-left my-1">
+                                    <p class="mb-0">Copyright:© 2023 Florez Pvt Ltd by</p>
+                                    <p><span class="indian">Indian company.</span>All Rights Reserved.</p>
+                                </div>
+                    </div>
+         <!-- left part ends    -->
+    
+    <!-- middle part 2 columns company & Product starts -->
+            <div class="col-lg-4 col-md-6 col-12  d-flex">
+                <!-- First Column starts-->
+                <div class="flex-grow-1 pr-3">
+                    <h4 class="font-weight-bold mb-3">Company</h4>
+                    <ul class="list-unstyled footer-list">
+                        <li class="mb-2"><a href="#">About Us</a></li>
+                        <li class="mb-2"><a href="#">Contact Us</a></li>
+                        <li class="mb-2"><a href="#">Career</a></li>
+                        <li class="mb-2"><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <!-- First Column ends-->
+    
+                <!-- Second Column starts-->
+                <div class="flex-grow-1 pl-3">
+                    <h4 class="mb-3">Product</h4>
+                    <ul class="list-unstyled footer-list">
+                        <li class="mb-2"><a href="#">Pricing Products</a></li>
+                        <li class="mb-2"><a href="#">Beauty</a></li>
+                        <li class="mb-2"><a href="#">Makeups</a></li>
+                        <li class="mb-2"><a href="#">Health</a></li>
+                        <li class="mb-2"><a href="#">Skincare</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- second column ends -->
+    
+    <!-- middle part 2 columns company & Product ends-->
+    
+                
+    <!-- end part Legal & help starts here  -->
+            <div class="col-lg-4 col-md-6 col-12  d-flex">
+                    <!-- Third Column -->
+                    <div class="flex-grow-1 pr-3">
+                        <h4 class="font-weight-bold mb-3">Legal</h4>
+                        <ul class="list-unstyled footer-list">
+                            <li class="mb-2"><a href="#">Privacy Policy</a></li>
+                            <li class="mb-2"><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Fourth Column -->
+                    <div class="flex-grow-1 pl-3">
+                        <h4 class="mb-3">Help</h4>
+                        <ul class="list-unstyled footer-list">
+                            <li class="mb-2"><a href="#">Payment Method</a></li>
+                            <li class="mb-2"><a href="#">Knowledge Base</a></li>
+                            <li class="mb-2"><a href="#">Customers</a></li>
+                        </ul>
+                    </div>
+            </div>
+    <!-- end part Legal & help ends here  -->
+    
+        </div>
+    
+        <!-- footer listing section ends -->
+    
+    </div>
+</footer>
+
+
+
+    
+<!-- internal js -->
+<script>
+
+
+
+</script>
+
+<!-- importing bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script
+src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+crossorigin="anonymous"
+></script>
+
+<!-- importing jquery -->
+<script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous">
+    </script>
+<!-- importing external js file -->
+<script defer src="./js/index.js"></script>
+<script defer src="./js/jquery.js"></script>
+</body>
+</html>

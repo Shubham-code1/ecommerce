@@ -1,0 +1,115 @@
+/* banner responsive css */
+
+@media screen and (max-width:567px) {
+
+  .text-div{
+    top: 50%;
+    width:75%;
+  }
+
+  .img-fluids{
+    height:100vh;
+    /* object-fit:fill; */
+  }
+
+  .banner-h2{
+    font-size:1.5rem;
+  }
+
+  .banner-f-head{
+    font-size:2.5rem;
+    color:rgb(248, 77, 106);
+   }
+}
+
+@media screen and (max-width:1100px){
+  .img-fluids{
+    height:100vh;
+  }
+}
+
+@media screen and (max-width:0px){
+  .img-fluids{
+    height:140vh;
+  }
+}
+
+
+   /* category responsive css */
+
+   @media screen and (max-width:600px){
+    .top-one,.bottom-one{
+        height:50vw;
+    }
+
+    .cat-container{
+        height:auto;
+        border:2px solid green;
+      }
+};
+
+@media screen and (max-width:576px){
+.top-one,.bottom-one{
+    height:50vw !important;
+}
+
+.cat-container{
+    height:auto;
+    border:2px solid green;
+  }
+};
+
+@media (min-width: 576px) and (max-width: 767.98px){
+        .bottom-cat-head{
+            color:yellow !important;
+        }
+}
+
+
+/* footer responsive css */
+
+
+@media screen and (max-width:1250px) {
+    .footer_pad{
+      padding:0 !important;
+    }
+  
+    .footer_lower_pad{
+      padding: 0 !important;
+      margin:1.4em 0 !important;
+    }
+  }
+  
+  @media screen and (max-width:576px){
+    .footer_head{
+      font-size:1.9em !important;
+    }
+  }
+  
+  
+  /* testimonial sections margins for screen less than 576px */
+  
+  @media screen and (max-width:576px){
+  .testimonial-margin{
+    margin:3em 0 0 0 !important;
+  }
+  }
+
+  /* advertise section */
+
+  @media screen and (max-width:576px) {
+    .content-ad > h1{
+      color:var(--primary-color);
+      font-size:2.5rem;
+  }
+  
+  .content-ad > p {
+    font-size:1.2rem;
+    line-height: 1.6rem;
+  }
+  .ad-section{
+    height:100vh;
+  }
+  }
+
+  
