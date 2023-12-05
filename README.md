@@ -5,6 +5,13 @@ E-commerce
 ### version 
 v-0.1.0
 
+### Github repository link
+- https://github.com/Shubham-code1/ecommerce
+
+### Deploy
+- https://statuesque-frangollo-264c49.netlify.app/#category 
+
+
 ### Project description
 
 This webpage is an interactive and visually appealing creation, built using HTML, CSS, JavaScript, Bootstrap, and jQuery. frontend ecommerce project includes three HTML pages: a home page, a product description details page, and a cart page that displays items and performs pricing calculations. Each page is fully responsive, catering to all devices. The project utilizes JavaScript, jQuery, HTML, CSS, and Bootstrap to enhance user experience, focusing on an intuitive interface. Users can navigate through product categories in the NavBar, view product details, and add items to their cart for future purchases. Additionally, a wishlist feature has been incorporated for user convenience, albeit it operates only on the UI and doesn't affect the backend. Users can also remove items from their cart. It's important to note that this project is entirely frontend-focused, with no backend implementation. LocalStorage has been used for data storage purposes.

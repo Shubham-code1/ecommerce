@@ -402,15 +402,13 @@ a:hover{
 
 
   /* new banner css */
-  .banner{
-    /* margin-top:4.7rem; */
-   }
-
+ 
   .img-fluids{
     width:100%;
     height:100vh;
     object-fit:cover;
   }
+
 
   .text-div{
     position: absolute;
@@ -428,6 +426,7 @@ a:hover{
     line-height:2.5rem;
     /* color:rgb(211, 207, 207); */
     color:rgb(255, 255, 255);
+   
   }
 
   .banner-f-head{
