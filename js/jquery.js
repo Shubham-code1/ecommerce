@@ -193,3 +193,50 @@ $(document).ready(function() {
       checkScreenSize();
     });
   });
+
+
+  // subscribe function of footer
+
+  if(!localStorage.getItem("subscribedUser")){
+    localStorage.setItem("subscribedUser","[]");
+  }
+
+  $(document).ready(function() {
+    $('#subscribe_me').click(function() {
+      
+      // Getting the value from the input field
+      var email = $('#subs_email').val();
+  
+      // Performing a basic email check
+      var emailRegex = /\S+@\S+\.\S+/;
+      if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      else{
+            let user = JSON.parse(localStorage.getItem("subscribedUser"));
+            user.push(email);
+            localStorage.setItem('subscribedUser', JSON.stringify(user));
+            alert('User subscribed successfully: ' + email);
+    }
+      setTimeout(function() {
+        $('#subs_email').val(""); // Setting the input value to an empty string after 100 milliseconds
+      }, 100);
+
+    });
+  });
+
+  // adding message to cart when no items are available in cart 
+
+  $(document).ready(function(){
+    let cartItems = JSON.parse(localStorage.getItem("itemsInCart"));
+    console.log("cart item",cartItems)
+    if(cartItems.length <= 0){
+      $("#warn_msg").html("No items in Cart, Please Add items to cart");  // adding message
+      console.log("no item in cart")
+      return;
+    }else{
+      $("#warn_msg").remove(); // removing the same message
+    }
+  });
+  

@@ -603,8 +603,11 @@ function addToCart(id){
 // redirecting to the page which shows the items present in cart
 
 async function buyNow(){
-    
-            let cartItems = JSON.parse(localStorage.getItem("itemsInCart"));
+
+
+
+  let cartItems = JSON.parse(localStorage.getItem("itemsInCart"));
+
             let response = await fetch('../static/cartItemsDisplay.html');
             let data = await response.text();
 

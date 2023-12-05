@@ -99,6 +99,14 @@ The product's detailed description opens in a new window after clicking the "Buy
 
 - The cart page displays all items in the cart with limited details like name, price, offer, old price, and images. Each item features a "Remove" button allowing users to delete individual items from the cart. Clicking the "Remove" button opens a new window reflecting the updated cart without the deleted item. Additionally, the page includes a pricing calculation section that is currently non-functional. This page is accessible by clicking the "Buy Now" button in the product display page and the cart icon in the homepage's navbar.
 
+If no any items are added previously in cart then a mesaage will appear there that "No items in cart,Please add items to cart" suggesting user to add item or product to cart first in order to buy it. 
+
+### foooter -- 
+- Footer has subscribe option by submitting the valid format email id , after putting the email id into input section when user clicks on subscribe     button user get successfull subscribed messahe in alert box. footer containing social media icons can be navigate to associated social media login page.
+
+
+
+
 ### Storage
 Local storage has been used for storing the products which has been added to the cart. This technology allows data to persist in the user's browser, enabling seamless retrieval and display of added items whenever the cart page is accessed.
 
@@ -109,4 +117,5 @@ Local storage has been used for storing the products which has been added to the
  ### Error handling 
 
 Error handling in this project encompasses various scenarios. I have ensured that when retrieving products from local storage, I verify the existence of data to prevent issues with empty or unavailable carts. Additionally, I have implemented checks to guarantee the proper functioning of cart actions like adding or removing items, displaying user-friendly notifications.I have employed try-catch blocks and error handling functions to manage unexpected errors, ensuring a smooth user experience even during network failures or unexpected behavior.
+
 
